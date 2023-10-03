@@ -9,6 +9,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     align-items: center;
     
 }
@@ -111,22 +112,45 @@ footer{
 }
 
 @media screen and (max-width:570px) {
-
+    body{
+        background-color: black;
+        color: white;
+    }.all{
+        background-color: inherit;
+        box-shadow: none;
+        
+    }
     h1{
         font-size: 50px;
         margin-bottom: 2.5em;
     }
+    .timer-class{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        width: 100%;
+        justify-content: center;
+        font-family: 'Black Ops One', cursive;
+        color: white !important;
+    }
     #timer{
-        font-size: 30px;
-        width: 6.2em;
+        font-size: 45px;
+        margin-left: -3rem;
+        width: 8em;
     }
     #ms{
-        font-size: 15px;
+        font-size: 20px;
+        margin-left: -3.5rem ;
         width: 2em;
     }
     button{
+        border: 1px solid ghostwhite;
+        font-size: 18px;
+        padding: 1.4em 1em 1.4em 1em;
+        border-radius: 50%;   
         
-        font-size: 15px;
-       
+    }
+    #reset{
+        color: black;
     }
 }
