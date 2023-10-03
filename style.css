@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Pixelify+Sans:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    background-color: #faf8f8b9;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h1{
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 100px;
+    border-bottom: 1px solid rgb(1, 73, 190);
+    margin-bottom: 1em;
+    background-color: #0090dd;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.all{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    padding: 3em 0em 6em 0em;
+    border: none;
+    border-color: #ddd;
+    width:80%;
+}
+.timer-class{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0px;
+    justify-content: center;
+    font-family: 'Black Ops One', cursive;
+    padding: 2em;
+    color: #373737!important;
+}
+
+#timer{
+    font-size: 80px;
+    width: 6.2em;
+}
+#ms{
+    font-size: 35px;
+    width: 2em;
+}
+.buttons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+button{
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#reset{
+    background-color: #fbad10 !important;
+}
+#reset:hover{
+    background-color: #f8b839 !important;
+}
+#start{
+    background-color: #4aae71;
+}
+
+#start:hover{
+    background-color: #6cba8a;
+}
+
+#stop{
+    background-color: rgb(199, 71, 71);
+}
+#stop:hover{
+    background-color: rgb(200, 95, 95);
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+footer{
+    bottom: 0px;
+    position: fixed;
+}
+@media screen and (max-width:780px) {
+ 
+    #timer{
+        font-size: 40px;
+        width: 6.2em;
+    }
+    #ms{
+        font-size: 20px;
+        width: 2em;
+    }
+}
+
+@media screen and (max-width:570px) {
+
+    h1{
+        font-size: 50px;
+        margin-bottom: 2.5em;
+    }
+    #timer{
+        font-size: 30px;
+        width: 6.2em;
+    }
+    #ms{
+        font-size: 15px;
+        width: 2em;
+    }
+    button{
+        
+        font-size: 15px;
+       
+    }
+}
